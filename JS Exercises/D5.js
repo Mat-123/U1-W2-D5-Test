@@ -17,15 +17,18 @@ console.log("Esercizio 1:", pets);
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
+
+const newPets = pets.slice();
 pets.sort();
-console.log("Esercizio 2:", pets);
+
+console.log("Esercizio 2:", newPets);
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 
-pets.reverse();
-console.log("Esercizio 3;", pets);
+newPets.reverse();
+console.log("Esercizio 3;", newPets);
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
@@ -75,11 +78,12 @@ let newObj = { brand: "Fiat", model: "Bravo", color: "White", trims: ["Base", "I
 cars.push(newObj);
 
 console.log("Esercizio 6:", cars);
-/*
+
 let updatedCars = cars;
 
-console.log("Esercizio 6.1:", updatedCars.trims.pop());
-*/
+cars.trims.pop();
+
+console.log("Esercizio 6.1:", updatedCars);
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
