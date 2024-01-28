@@ -1,65 +1,92 @@
+/*GENERAL RULES*/
 * {
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER RULES */
 header {
   background-color: #222f3f;
-  height: 5vh;
+  height: 3em;
 }
 
-.logo img {
-  height: 100%;
+header img {
   object-fit: contain;
-  display: inline;
-  padding: 5px;
+  height: 100%;
+  padding: 0.5em;
 }
 
+/* NAV RULES */
 nav {
-  background-color: #364758;
+  background-color: #364757;
+  height: 2em;
+}
+
+nav div {
+  padding-top: 0.5em;
+}
+
+nav div a {
+  padding: 0.5em;
   color: white;
 }
 
-.top {
-  height: 3vh;
-}
-
-.bottom {
-  height: 5vh;
-}
-
+/* MAIN RULES */
 main {
-  padding: 2%;
+  padding: 1em;
+  text-align: center;
+  background-color: #e9edee;
 }
 
-.orangenav {
+.orangebar {
   background-color: #f56600;
+  height: 2rem;
   text-align: center;
   color: white;
-  padding-top: 4%;
+  padding-top: 0.5em;
+  margin-bottom: 1em;
 }
 
-.bggreen {
+.holidaybar {
   background-image: url("../images/bg-image.png");
-  padding-top: 4%;
-  text-align: center;
+  background-position: center center;
+  height: 8em;
+  padding-top: 1.5em;
+  margin-bottom: 1em;
   color: white;
 }
-div img {
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-  padding-top: 4%;
+
+h1 {
+  font-size: 1.5rem;
 }
 
-section div {
-  display: inline-block;
-  object-fit: contain;
+.gifter {
+  padding: 2em;
+}
+
+main img {
+  width: 100%;
+}
+
+section {
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+section p {
+  text-align: left;
+  padding: 1em;
+  margin-bottom: 0;
 }
 
 .column {
   float: left;
   width: 25%;
-  padding: 5px;
+  padding: 0em 1em 1em;
+  object-fit: cover;
 }
 
 .row::after {
@@ -68,6 +95,39 @@ section div {
   display: table;
 }
 
+section div img {
+  border-radius: 15px;
+  box-shadow: 0 3px 3px #bababa;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+p a {
+  color: #2d656c;
+}
+/*FOOTER RULES */
+.centered {
+  text-align: center;
+  background-color: #364757;
+  height: 2em;
+  padding-top: 0.5em;
+}
+
+.bottomlink {
+  color: white;
+}
+
 footer {
   background-color: #222f3f;
+  height: 5em;
+}
+
+footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  padding: 1em;
 }
